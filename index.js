@@ -57,3 +57,18 @@ const ageMapCombination = ages
   .map((age) => Math.sqrt(age))
   .map((age) => age * 2);
 console.log(ageMapCombination);
+
+//***** REDUCE *****/
+//The reduce() method in JavaScript is used to reduce the array to a single value.
+//It executes a provided function for each value of the array(from left - to - right).
+//The return value of the function is stored in an accumulator(result / total).
+
+const operation = (item, acum) => acum + item;
+const ageSum = ages.reduce((acum, age) => operation(acum, age), 0);
+console.log(ageSum);
+
+const totalyears = companies.reduce(
+  (accum, company) => accum + (company.start - company.end),
+  0
+);
+console.log(totalyears);
