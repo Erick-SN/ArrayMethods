@@ -132,3 +132,15 @@ console.log(res);
 //The join() method in JavaScript is used to join all the elements of an array into a string.
 //It takes an argument which specifies the separator to be used while joining the elements.
 //The default separator is a comma(,).
+
+const countries = ['Rummania', 'USA', 'India'];
+const countriesJoin = countries.join(',');
+console.log(countriesJoin);
+
+//***** REVERSE *****/
+//The reverse() method reverses an array in place. The first array element becomes the
+//last and the last becomes the first.
+
+const reverseNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+reverseNumbers.reverse();
+console.log(reverseNumbers);
