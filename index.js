@@ -72,3 +72,12 @@ const totalyears = companies.reduce(
   0
 );
 console.log(totalyears);
+
+//***** SLICE *****/
+//The slice() method in JavaScript is used to extract a section of a string and return
+//it as a new string.It takes two parameters, start and end, and returns the part of the
+//string between the start and end indices, not including the end index itself.
+// if you provide a negative start you will get the items from the end
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const slicedNumbers = numbers.slice(1, 5);
+console.log(slicedNumbers);
