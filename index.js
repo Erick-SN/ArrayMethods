@@ -144,3 +144,21 @@ console.log(countriesJoin);
 const reverseNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 reverseNumbers.reverse();
 console.log(reverseNumbers);
+
+//***** INDEXOF *****/
+//The indexOf() method in JavaScript is used to search for a specified item in an array and returns its position.
+//It returns - 1 if the item is not found.
+
+const numbersIndexOf = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const index = numbersIndexOf.indexOf(5);
+console.log(index);
+
+//***** EVERY *****/
+//The every() method in JavaScript is used to check if all elements in an array pass a test
+//(provided as a function). The every() method executes the provided callback function once
+//for each element present in the array until it finds one where callback returns a falsy value.
+//If no elements in the array pass the test, it will return true.
+
+const numbersEvery = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const isEven = numbersEvery.every((number) => number % 2 === 0);
+console.log(isEven);
