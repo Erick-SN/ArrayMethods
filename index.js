@@ -117,3 +117,18 @@ const fillInNumbers = (n) =>
     .fill(0)
     .map((_, idx) => idx + 1);
 console.log(fillInNumbers(5));
+
+//***** INCLUDES *****/
+//The includes() method in JavaScript is used to check if a string contains a specified
+//character or sequence of characters.It returns true if the string contains
+//the specified character or sequence of characters, and false if not.
+
+const names = ['Float', 'String', 'Integer', 'Double'];
+const res = names.includes('String');
+console.log(res);
+
+//***** JOIN *****/
+
+//The join() method in JavaScript is used to join all the elements of an array into a string.
+//It takes an argument which specifies the separator to be used while joining the elements.
+//The default separator is a comma(,).
