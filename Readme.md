@@ -28,6 +28,6 @@ The `reduce()` method executes a reducer function (that you provide) on each ele
 
 Syntax:
 
-````javascript
-array.reduce(function(total, currentValue, currentIndex, arr), initialValue)  											    ```
-````
+```javascript
+array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+```

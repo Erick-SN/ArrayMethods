@@ -78,6 +78,28 @@ console.log(totalyears);
 //it as a new string.It takes two parameters, start and end, and returns the part of the
 //string between the start and end indices, not including the end index itself.
 // if you provide a negative start you will get the items from the end
+
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const slicedNumbers = numbers.slice(1, 5);
 console.log(slicedNumbers);
+
+//***** SORT *****/
+
+//The sort() method in JavaScript is used to sort the elements of an array in place and
+//returns the sorted array.The default sort order is according to string Unicode code points.
+//normaly a - b its for the lowest to highest and b - a its for the highest to lowest
+
+const sortNumbers = [73, 23, 34, 56, 78, 5, 4, 23, 98];
+console.log(sortNumbers.sort((a, b) => b - a));
+
+//***** CONCAT *****/
+//The concat() method in JavaScript is used to merge two or more arrays. This method does not
+//change the existing arrays, but instead returns a new array.
+
+const arrayOne = [1, 2, 3];
+const arrayTwo = [4, 5, 6, 7];
+const newArray = arrayOne.concat(arrayTwo);
+//We can also use the spread operator
+const newArrayTwo = [...arrayOne, ...arrayTwo];
+console.log(newArray);
+console.log(newArrayTwo);
