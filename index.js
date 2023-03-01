@@ -103,3 +103,17 @@ const newArray = arrayOne.concat(arrayTwo);
 const newArrayTwo = [...arrayOne, ...arrayTwo];
 console.log(newArray);
 console.log(newArrayTwo);
+
+//***** FILL *****/
+//The fill() method in JavaScript is used to fill the elements in an array with a static value.
+//It is used to modify the existing elements of an array and fill them with a static value.
+
+const baseArray = [1, 2, 3];
+const fillZeroValues = baseArray.fill(0);
+console.log(fillZeroValues);
+
+const fillInNumbers = (n) =>
+  Array(n)
+    .fill(0)
+    .map((_, idx) => idx + 1);
+console.log(fillInNumbers(5));
