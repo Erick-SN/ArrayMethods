@@ -1,6 +1,6 @@
 # Array Methods in JavaScript
 
-This project is intended to explain the array methods in JavaScript, which includes map, filter and reduce.
+This project is intended to explain the array methods in JavaScript.
 
 ## Map
 
