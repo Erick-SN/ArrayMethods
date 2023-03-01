@@ -38,3 +38,22 @@ console.log(companiesByDate);
 //The map() method in JavaScript creates a new array
 //with the results of calling a provided function on
 //every element in the calling array.
+
+const companyNames = companies.map((company) => company.name);
+console.log(companyNames);
+
+const companiesTilte = companies.map(
+  ({ name, start, end }) => `${name} [${start} - ${end}]`
+);
+console.log(companiesTilte);
+
+const agesSquare = ages.map((age) => Math.sqrt(age));
+console.log(agesSquare);
+
+const agesTimesTwo = ages.map((age) => age * 2);
+console.log(agesTimesTwo);
+
+const ageMapCombination = ages
+  .map((age) => Math.sqrt(age))
+  .map((age) => age * 2);
+console.log(ageMapCombination);
