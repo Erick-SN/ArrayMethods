@@ -84,7 +84,6 @@ const slicedNumbers = numbers.slice(1, 5);
 console.log(slicedNumbers);
 
 //***** SORT *****/
-
 //The sort() method in JavaScript is used to sort the elements of an array in place and
 //returns the sorted array.The default sort order is according to string Unicode code points.
 //normaly a - b its for the lowest to highest and b - a its for the highest to lowest
@@ -128,7 +127,6 @@ const res = names.includes('String');
 console.log(res);
 
 //***** JOIN *****/
-
 //The join() method in JavaScript is used to join all the elements of an array into a string.
 //It takes an argument which specifies the separator to be used while joining the elements.
 //The default separator is a comma(,).
@@ -174,5 +172,34 @@ console.log(greaterThan);
 
 //***** FIND *****/
 //Explain the find() method in JavaScript
+
 const namesFind = ['Erick', 'Luis', 'Rodrigo'];
 console.log(namesFind.find((item) => item === 'Luis'));
+
+//***** FINDINDEX *****/
+//The findIndex() method in JavaScript is used to return the index of the first element
+//in an array that passes a given test.It takes a callback function as an argument
+//which is called once for each element in the array until it finds one where
+//the callback returns a truthy value(a value that evaluates to true).
+//If no such element is found, it will return -1.
+
+const numbersFind = [1, 2, 3, 4, 5];
+const greaterThanFind = numbersFind.findIndex((number) => number > 4);
+console.log(greaterThanFind);
+
+//***** FROM ******/
+//The from() method in JavaScript creates a new, shallow-copied Array instance from an
+//array - like or iterable object.It is used to convert array - like objects into arrays.
+
+const str = '134567890';
+const resFrom = Array.from(str, (x) => Number(x));
+console.log(resFrom);
+
+const duplicates = [1, 1, 2, 2, 3, 4, 5, 5, 6, 7, 7];
+const resDuplicates = Array.from(new Set(duplicates));
+console.log(resDuplicates);
+
+//The Set() instance is a new data structure introduced in ES6(ECMAScript 6)
+//that allows you to store unique values of any type.
+//It is similar to an array, but with the added benefit of not allowing duplicate values.
+//This makes it easier to keep track of unique values and perform operations on them.
