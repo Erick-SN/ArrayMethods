@@ -171,3 +171,8 @@ console.log(isEven);
 const numbersSome = [1, 2, 3, 4, 5];
 const greaterThan = numbersSome.some((number) => number > 4);
 console.log(greaterThan);
+
+//***** FIND *****/
+//Explain the find() method in JavaScript
+const namesFind = ['Erick', 'Luis', 'Rodrigo'];
+console.log(namesFind.find((item) => item === 'Luis'));
