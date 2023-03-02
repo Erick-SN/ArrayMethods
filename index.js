@@ -162,3 +162,12 @@ console.log(index);
 const numbersEvery = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const isEven = numbersEvery.every((number) => number % 2 === 0);
 console.log(isEven);
+
+//***** SOME *****/
+//The some() method in JavaScript is used to test whether at least one element in the array
+//passes the test implemented by the provided function. It returns a Boolean value of
+//true or false.
+
+const numbersSome = [1, 2, 3, 4, 5];
+const greaterThan = numbersSome.some((number) => number > 4);
+console.log(greaterThan);
